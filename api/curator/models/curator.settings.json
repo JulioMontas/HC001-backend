@@ -22,9 +22,8 @@
       "type": "string"
     },
     "languages_curated": {
-      "collection": "programming-language",
       "via": "curator",
-      "dominant": true
+      "collection": "programming-language"
     },
     "photo": {
       "model": "file",
@@ -35,6 +34,10 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "language_likes": {
+      "via": "curators_likes",
+      "collection": "programming-language"
     }
   }
 }

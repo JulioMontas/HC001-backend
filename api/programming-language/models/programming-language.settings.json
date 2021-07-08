@@ -68,6 +68,15 @@
     "curator": {
       "via": "languages_curated",
       "model": "curator"
+    },
+    "curators_likes": {
+      "collection": "curator",
+      "via": "language_likes",
+      "dominant": true
+    },
+    "types": {
+      "via": "programming_languages",
+      "collection": "type"
     }
   }
 }
