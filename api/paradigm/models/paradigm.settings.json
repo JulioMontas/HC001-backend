@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "paradigms",
+  "info": {
+    "name": "Paradigm",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "programming_languages": {
+      "via": "paradigms",
+      "collection": "programming-language"
+    },
+    "descriptions": {
+      "type": "text"
+    }
+  }
+}

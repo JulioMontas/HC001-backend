@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_list_file_extensions",
+  "info": {
+    "name": "File Extensions",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

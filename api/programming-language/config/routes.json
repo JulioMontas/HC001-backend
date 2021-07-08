@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/programming-languages",
+      "handler": "programming-language.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/programming-languages/count",
+      "handler": "programming-language.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/programming-languages/:id",
+      "handler": "programming-language.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/programming-languages",
+      "handler": "programming-language.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/programming-languages/:id",
+      "handler": "programming-language.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/programming-languages/:id",
+      "handler": "programming-language.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

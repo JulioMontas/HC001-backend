@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/paradigms",
+      "handler": "paradigm.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/paradigms/count",
+      "handler": "paradigm.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/paradigms/:id",
+      "handler": "paradigm.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/paradigms",
+      "handler": "paradigm.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/paradigms/:id",
+      "handler": "paradigm.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/paradigms/:id",
+      "handler": "paradigm.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

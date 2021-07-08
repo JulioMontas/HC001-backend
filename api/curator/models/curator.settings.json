@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "curators",
+  "info": {
+    "name": "Curator",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Biography": {
+      "type": "text"
+    },
+    "URL": {
+      "type": "string"
+    },
+    "languages_curated": {
+      "collection": "programming-language",
+      "via": "curator",
+      "dominant": true
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

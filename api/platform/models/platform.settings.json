@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "platforms",
+  "info": {
+    "name": "Platform",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "programming_languages": {
+      "via": "platforms",
+      "collection": "programming-language",
+      "dominant": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "programming_languages",
+  "info": {
+    "name": "Programming Language",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "paradigms": {
+      "via": "programming_languages",
+      "collection": "paradigm",
+      "dominant": true
+    },
+    "influenced_bies": {
+      "collection": "programming-language"
+    },
+    "influenced": {
+      "collection": "programming-language"
+    },
+    "platforms": {
+      "via": "programming_languages",
+      "collection": "platform"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "designer": {
+      "type": "string"
+    },
+    "hello_world": {
+      "type": "richtext"
+    },
+    "biography": {
+      "type": "richtext"
+    },
+    "year": {
+      "type": "date"
+    },
+    "references": {
+      "type": "component",
+      "repeatable": true,
+      "component": "list.references"
+    },
+    "file_extensions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "list.file-extensions"
+    },
+    "author": {
+      "type": "component",
+      "repeatable": true,
+      "component": "list.author-s"
+    },
+    "website": {
+      "type": "component",
+      "repeatable": false,
+      "component": "list.website"
+    },
+    "curator": {
+      "via": "languages_curated",
+      "model": "curator"
+    }
+  }
+}

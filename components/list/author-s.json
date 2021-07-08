@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_list_author_s_s",
+  "info": {
+    "name": "Author(s)",
+    "icon": "allergies",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "URL": {
+      "type": "string"
+    }
+  }
+}
