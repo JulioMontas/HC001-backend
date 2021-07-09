@@ -77,6 +77,17 @@
     "types": {
       "via": "programming_languages",
       "collection": "type"
+    },
+    "approved": {
+      "type": "boolean"
+    },
+    "libraries": {
+      "via": "programming_language",
+      "collection": "library"
+    },
+    "frameworks": {
+      "via": "programming_language",
+      "collection": "framework"
     }
   }
 }

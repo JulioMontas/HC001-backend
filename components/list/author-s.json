@@ -12,6 +12,9 @@
     },
     "URL": {
       "type": "string"
+    },
+    "company": {
+      "type": "string"
     }
   }
 }

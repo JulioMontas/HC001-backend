@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "types",
+  "collectionName": "libraries",
   "info": {
-    "name": "Type",
+    "name": "Library",
     "description": ""
   },
   "options": {
@@ -12,16 +12,12 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "Name": {
       "type": "string"
     },
-    "descriptions": {
-      "type": "text"
-    },
-    "programming_languages": {
-      "via": "types",
-      "collection": "programming-language",
-      "dominant": true
+    "programming_language": {
+      "model": "programming-language",
+      "via": "libraries"
     }
   }
 }
