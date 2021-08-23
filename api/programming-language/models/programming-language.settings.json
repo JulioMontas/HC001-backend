@@ -78,10 +78,6 @@
       "via": "known_fors",
       "model": "designer"
     },
-    "themes": {
-      "via": "programming_languages",
-      "collection": "type"
-    },
     "syntax": {
       "via": "programming_language",
       "model": "syntax"

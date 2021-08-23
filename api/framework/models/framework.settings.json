@@ -32,10 +32,6 @@
     "curator_framework": {
       "via": "frameworks",
       "model": "curator"
-    },
-    "themes": {
-      "via": "frameworks",
-      "collection": "type"
     }
   }
 }
