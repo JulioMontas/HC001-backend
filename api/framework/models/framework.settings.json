@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string"
     },
     "programming_language": {
@@ -21,9 +21,9 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "Name"
+      "targetField": "name"
     },
-    "Year": {
+    "year": {
       "type": "date",
       "unique": false,
       "required": false,

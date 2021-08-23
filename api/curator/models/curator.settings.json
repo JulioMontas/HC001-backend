@@ -40,8 +40,8 @@
       "collection": "framework"
     },
     "libraries": {
-      "collection": "library",
-      "via": "curator_library"
+      "via": "curator_library",
+      "collection": "library"
     },
     "slug": {
       "type": "uid",
