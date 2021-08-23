@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/syntaxes",
+      "handler": "syntax.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/syntaxes/count",
+      "handler": "syntax.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/syntaxes/:id",
+      "handler": "syntax.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/syntaxes",
+      "handler": "syntax.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/syntaxes/:id",
+      "handler": "syntax.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/syntaxes/:id",
+      "handler": "syntax.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

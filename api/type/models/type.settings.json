@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "types",
   "info": {
-    "name": "Type",
+    "name": "Theme",
     "description": ""
   },
   "options": {
@@ -19,8 +19,18 @@
       "type": "text"
     },
     "programming_languages": {
-      "via": "types",
+      "via": "themes",
       "collection": "programming-language",
+      "dominant": true
+    },
+    "frameworks": {
+      "via": "themes",
+      "collection": "framework",
+      "dominant": true
+    },
+    "libraries": {
+      "collection": "library",
+      "via": "themes",
       "dominant": true
     }
   }

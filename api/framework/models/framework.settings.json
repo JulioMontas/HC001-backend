@@ -16,8 +16,26 @@
       "type": "string"
     },
     "programming_language": {
-      "model": "programming-language",
-      "via": "frameworks"
+      "via": "frameworks",
+      "model": "programming-language"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Name"
+    },
+    "Year": {
+      "type": "date",
+      "unique": false,
+      "required": false,
+      "private": false
+    },
+    "curator_framework": {
+      "via": "frameworks",
+      "model": "curator"
+    },
+    "themes": {
+      "via": "frameworks",
+      "collection": "type"
     }
   }
 }

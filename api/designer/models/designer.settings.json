@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "designers",
+  "info": {
+    "name": "Designer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Born": {
+      "type": "date"
+    },
+    "Died": {
+      "type": "date"
+    },
+    "Education": {
+      "type": "string"
+    },
+    "known_fors": {
+      "via": "designed_by",
+      "collection": "programming-language"
+    },
+    "Gender": {
+      "type": "enumeration",
+      "enum": [
+        "Male",
+        "Female",
+        "NonBinary"
+      ]
+    }
+  }
+}

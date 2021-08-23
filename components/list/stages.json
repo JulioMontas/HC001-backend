@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_list_stages",
+  "info": {
+    "name": "stages",
+    "icon": "arrow-circle-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "example": {
+      "type": "richtext"
+    }
+  }
+}

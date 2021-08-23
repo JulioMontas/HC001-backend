@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "libraries",
+  "collectionName": "syntaxes",
   "info": {
-    "name": "Library",
+    "name": "Syntax",
     "description": ""
   },
   "options": {
@@ -16,16 +16,16 @@
       "type": "string"
     },
     "programming_language": {
-      "via": "libraries",
+      "via": "syntax",
       "model": "programming-language"
     },
-    "curator_library": {
-      "via": "libraries",
-      "model": "curator"
+    "Version": {
+      "type": "component",
+      "repeatable": true,
+      "component": "list.version"
     },
-    "themes": {
-      "via": "libraries",
-      "collection": "type"
+    "file_extensions": {
+      "type": "string"
     }
   }
 }

@@ -35,8 +35,20 @@
       "required": false,
       "pluginOptions": {}
     },
+    "frameworks": {
+      "via": "curator_framework",
+      "collection": "framework"
+    },
+    "libraries": {
+      "collection": "library",
+      "via": "curator_library"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Name"
+    },
     "language_likes": {
-      "via": "curators_likes",
+      "via": "user_likes",
       "collection": "programming-language"
     }
   }

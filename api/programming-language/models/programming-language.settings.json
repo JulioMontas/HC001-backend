@@ -33,16 +33,10 @@
     "slug": {
       "type": "uid"
     },
-    "designer": {
-      "type": "string"
-    },
-    "hello_world": {
-      "type": "richtext"
-    },
     "biography": {
       "type": "richtext"
     },
-    "year": {
+    "releaseDate": {
       "type": "date"
     },
     "references": {
@@ -50,12 +44,7 @@
       "repeatable": true,
       "component": "list.references"
     },
-    "file_extensions": {
-      "type": "component",
-      "repeatable": true,
-      "component": "list.file-extensions"
-    },
-    "author": {
+    "designer": {
       "type": "component",
       "repeatable": true,
       "component": "list.author-s"
@@ -69,14 +58,10 @@
       "via": "languages_curated",
       "model": "curator"
     },
-    "curators_likes": {
+    "user_likes": {
       "collection": "curator",
       "via": "language_likes",
       "dominant": true
-    },
-    "types": {
-      "via": "programming_languages",
-      "collection": "type"
     },
     "approved": {
       "type": "boolean"
@@ -88,6 +73,36 @@
     "frameworks": {
       "via": "programming_language",
       "collection": "framework"
+    },
+    "designed_by": {
+      "via": "known_fors",
+      "model": "designer"
+    },
+    "themes": {
+      "via": "programming_languages",
+      "collection": "type"
+    },
+    "syntax": {
+      "via": "programming_language",
+      "model": "syntax"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "release": {
+      "type": "component",
+      "repeatable": true,
+      "component": "list.release"
+    },
+    "version": {
+      "type": "string"
     }
   }
 }

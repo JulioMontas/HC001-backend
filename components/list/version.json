@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_list_versions",
+  "info": {
+    "name": "Version",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Version": {
+      "type": "string"
+    },
+    "hello_world": {
+      "type": "richtext"
+    }
+  }
+}
