@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "themes",
+  "info": {
+    "name": "Theme"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "descriptions": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "programming_languages": {
+      "collection": "programming-language",
+      "via": "themes",
+      "dominant": true
+    },
+    "frameworks": {
+      "collection": "framework",
+      "via": "themes",
+      "dominant": true
+    },
+    "libraries": {
+      "collection": "library",
+      "via": "themes",
+      "dominant": true
+    }
+  }
+}

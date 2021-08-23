@@ -26,6 +26,10 @@
     "slug": {
       "type": "uid",
       "targetField": "name"
+    },
+    "themes": {
+      "via": "libraries",
+      "collection": "theme"
     }
   }
 }

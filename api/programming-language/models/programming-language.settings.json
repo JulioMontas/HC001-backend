@@ -99,6 +99,10 @@
     },
     "version": {
       "type": "string"
+    },
+    "themes": {
+      "via": "programming_languages",
+      "collection": "theme"
     }
   }
 }
