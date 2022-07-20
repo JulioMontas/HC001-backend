@@ -30,6 +30,26 @@
     "themes": {
       "via": "libraries",
       "collection": "theme"
+    },
+    "slogan": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "showcase": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "color": {
+      "via": "libraries",
+      "model": "color"
     }
   }
 }

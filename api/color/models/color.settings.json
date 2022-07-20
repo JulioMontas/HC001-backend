@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "themes",
+  "collectionName": "colors",
   "info": {
-    "name": "Stack",
+    "name": "Color",
     "description": ""
   },
   "options": {
@@ -12,30 +12,26 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "title": {
       "type": "string"
     },
-    "descriptions": {
-      "type": "text"
-    },
-    "slug": {
-      "type": "uid",
-      "targetField": "name"
+    "hex": {
+      "type": "string"
     },
     "programming_languages": {
       "collection": "programming-language",
-      "via": "themes",
-      "dominant": true
+      "via": "color"
     },
     "frameworks": {
-      "via": "themes",
       "collection": "framework",
-      "dominant": true
+      "via": "color"
     },
     "libraries": {
-      "via": "themes",
       "collection": "library",
-      "dominant": true
+      "via": "color"
+    },
+    "Description": {
+      "type": "text"
     }
   }
 }

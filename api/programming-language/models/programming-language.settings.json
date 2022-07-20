@@ -59,8 +59,8 @@
       "model": "curator"
     },
     "user_likes": {
-      "collection": "curator",
       "via": "language_likes",
+      "collection": "curator",
       "dominant": true
     },
     "approved": {
@@ -103,6 +103,10 @@
     "themes": {
       "via": "programming_languages",
       "collection": "theme"
+    },
+    "color": {
+      "via": "programming_languages",
+      "model": "color"
     }
   }
 }

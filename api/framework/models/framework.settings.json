@@ -36,6 +36,13 @@
     "themes": {
       "via": "frameworks",
       "collection": "theme"
+    },
+    "descriptions": {
+      "type": "richtext"
+    },
+    "color": {
+      "via": "frameworks",
+      "model": "color"
     }
   }
 }

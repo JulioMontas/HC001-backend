@@ -12,10 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string"
     },
-    "Biography": {
+    "biography": {
       "type": "text"
     },
     "URL": {
@@ -45,7 +45,7 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "Name"
+      "targetField": "name"
     },
     "language_likes": {
       "via": "user_likes",
